@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="VdoCipherTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="5" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IvG-VE-HGz">
+                                <rect key="frame" x="72" y="85" width="96" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start TIme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkd-eo-97b">
+                                <rect key="frame" x="80" y="56" width="80" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="8d9-KH-1pH"/>
+                                    <constraint firstAttribute="width" constant="80" id="Zlu-Wp-fhB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z6p-LW-wo6">
+                                <rect key="frame" x="250" y="84" width="96" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPY-lQ-au7">
+                                <rect key="frame" x="262" y="55" width="72" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="WB4-5N-ieI"/>
+                                    <constraint firstAttribute="height" constant="21" id="sbh-SU-6NF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWQ-qS-rOR">
+                                <rect key="frame" x="149.5" y="145" width="115" height="30"/>
+                                <color key="backgroundColor" red="0.078794709480000003" green="0.55791203659999999" blue="0.0082865510420000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1Bo-cH-lDN"/>
+                                    <constraint firstAttribute="width" constant="115" id="Y7l-QS-6xh"/>
+                                </constraints>
+                                <state key="normal" title="Crop &amp; Play">
+                                    <color key="titleColor" red="0.98823529409999999" green="1" blue="0.95915454629999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="acnBtnCropndPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hnr-Yf-8zn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="z6p-LW-wo6" firstAttribute="top" secondItem="rPY-lQ-au7" secondAttribute="bottom" constant="8" symbolic="YES" id="0XG-3l-dC0"/>
+                            <constraint firstItem="z6p-LW-wo6" firstAttribute="centerX" secondItem="rPY-lQ-au7" secondAttribute="centerX" id="4Mh-jY-OO1"/>
+                            <constraint firstItem="yWQ-qS-rOR" firstAttribute="top" secondItem="IvG-VE-HGz" secondAttribute="bottom" constant="26" id="A60-Rq-B3t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rPY-lQ-au7" secondAttribute="trailing" constant="80" id="ACz-DN-EDH"/>
+                            <constraint firstItem="z6p-LW-wo6" firstAttribute="width" secondItem="IvG-VE-HGz" secondAttribute="width" id="Axv-ku-3aW"/>
+                            <constraint firstItem="fkd-eo-97b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="FUX-KB-mZy"/>
+                            <constraint firstItem="fkd-eo-97b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="OMe-dZ-vCR"/>
+                            <constraint firstItem="IvG-VE-HGz" firstAttribute="top" secondItem="fkd-eo-97b" secondAttribute="bottom" constant="8" symbolic="YES" id="W5G-y8-4Ou"/>
+                            <constraint firstItem="rPY-lQ-au7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="11" id="a2T-IW-3FB"/>
+                            <constraint firstItem="IvG-VE-HGz" firstAttribute="width" secondItem="fkd-eo-97b" secondAttribute="width" multiplier="1.2" id="gfA-XX-qT3"/>
+                            <constraint firstItem="yWQ-qS-rOR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uLO-Kx-VcR"/>
+                            <constraint firstItem="IvG-VE-HGz" firstAttribute="centerX" secondItem="fkd-eo-97b" secondAttribute="centerX" id="z3U-zh-vYw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txfEndPoint" destination="z6p-LW-wo6" id="0Qv-Qq-7bE"/>
+                        <outlet property="txfStartPoint" destination="IvG-VE-HGz" id="PNK-pE-oZ4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="62.946428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
